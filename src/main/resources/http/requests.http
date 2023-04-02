@@ -1,0 +1,34 @@
+GET localhost/students?page=1&size=3
+
+###
+
+POST localhost/students
+Content-Type: application/json
+
+{
+  "firstName": "Новый студент - имя",
+  "lastName": "Новый студент - фамилия"
+}
+
+###
+
+PUT localhost/students/2
+Content-Type: application/json
+
+{
+  "firstName": "Daniil",
+  "lastName": "Simankov"
+}
+
+###
+
+DELETE localhost/students/2
+
+###
+
+POST localhost/students/6/courses
+Content-Type: application/json
+
+{
+   "id": 1
+}
